@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu.Resturant.resturant">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dadada"
+        >
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+     <RelativeLayout
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#414141"
+         android:id="@+id/orderinglayout"
+         android:clickable="true"
+         >
+         <Button
+             android:id="@+id/foodOrderBtn"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text= "تایید سفارش"
+             android:textColor="#eefee6"
+             android:textSize="20sp"
+             android:background="@drawable/ripple_effect"
+             android:layout_centerHorizontal="true"
+             android:padding="10dp"
+             />
+     </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:id="@+id/foodlist"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_above="@id/orderinglayout"
+            />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

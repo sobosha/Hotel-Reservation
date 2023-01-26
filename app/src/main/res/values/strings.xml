@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hotelReservastion</string>
+    <string name="toolbartitle">خدمات هتل</string>
+    <string name="title_activity_resturant">resturant</string>
+</resources>

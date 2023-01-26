@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="5dp"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderdialogtitle"
+        android:textSize="17sp"
+        android:background="#000c52"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#f7f7f7"
+        android:padding="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:id="@+id/InplaceOrder"
+        android:layout_below="@id/orderdialogtitle"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InresturantOrder"
+        android:layout_below="@id/InplaceOrder"
+        android:background="@drawable/ripple_effect"
+
+        />
+</RelativeLayout>

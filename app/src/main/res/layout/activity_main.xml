@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.hoseinse.hotelreservastion.MainMenu.MainPage.MainActivity"
+    android:id="@+id/main_layout">
+    <RelativeLayout
+        android:id="@+id/main_activ"
+        android:background="#000c52"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+    <GridView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:elevation="5dp"
+        android:horizontalSpacing="15dp"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:verticalSpacing="30dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#000c52"
+            />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_anim_login"
+    android:id="@+id/login_layout"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/User"
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:text="هتل داریوش"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/hotelD"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/User"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/userimage"
+        android:textColorHint="#d2ffffff"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/Pass"
+        android:layout_below="@id/User"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/passimage"
+        android:textColorHint="#d2ffffff"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        />
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btn_id"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:background="@drawable/button_spin"
+        android:layout_marginBottom="80dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Pass"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:background="@color/green"
+    android:id="@+id/Rel">
+</RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>
